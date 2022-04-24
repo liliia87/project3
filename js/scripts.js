@@ -13,7 +13,6 @@ function createAnArray(number){
 
 function replaceSpecialNumbers(arr){
   var a = arr.toString().split(",");
-  //alert(a.length);
   let newArray = [];
   for (let i=0; i<=a.length-1; i+=1){
     if(a[i].includes("3")){
@@ -44,6 +43,5 @@ $(document).ready(function(){
     const NewArray = createAnArray(number);
 
     $("#page-1").html("input: "+ number +"<br>"+"output: "+ replaceSpecialNumbers(NewArray));
-    //$("#page-1").html("output: "+ replaceSpecialNumbers(NewArray));
   });
 });
